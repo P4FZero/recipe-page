@@ -1,0 +1,117 @@
+/* ||Typography - Fonts */
+
+@font-face {
+    font-family: "outfit";
+    src: url(assets/fonts/outfit/Outfit-Regular.woff2) format("woff2");
+    src: url(assets/fonts/outfit/Outfit-Regular.woff) format("woff");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "outfit";
+    src: url(assets/fonts/outfit/Outfit-Bold.woff2)("woff2");
+    src: url(assets/fonts/outfit/Outfit-Bold.woff) format("woff");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "outfit";
+    src: url(assets/fonts/outfit/Outfit-SemiBold.woff2)("woff2");
+    src: url(assets/fonts/outfit/Outfit-SemiBold.woff) format("woff");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "young-serif";
+    src: url(assets/fonts/young-serif/youngserif-regular-webfont.woff2) format("woff2");
+    src: url(assets/fonts/young-serif/youngserif-regular-webfont.woff) format("woff");
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* ||Pre settings */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ||Colors*/
+
+:root {
+    /* Primary */
+
+    --dark-raspberry: hsl(332, 51%, 32%);
+    /*  */
+    --nutmeg: hsl(14, 45%, 36%);
+
+    /* Neutral */
+
+    /*  */
+    --dark-charcoal: hsl(24, 5%, 18%);
+    --eggshell: hsl(30, 54%, 90%);
+    /*  */
+    --light-grey: hsl(30, 18%, 87%);
+    --rose-white: hsl(330, 100%, 98%);
+    /*  */
+    --wenge-brown: hsl(30, 10%, 34%);
+    /*  */
+    --white: hsl(0, 0%, 100%);
+}
+
+/* ||General settings */
+
+body {
+    max-width: 375px;
+    font-family: "outfit", sans-serif;
+    color: var(--wenge-brown);
+    background-color: var(--white);
+}
+
+img {
+    width: 100%;
+}
+
+section:not(:first-child, :last-child) {
+    border-bottom: 1px solid var(--light-grey);
+}
+
+h1 {
+    color: var(--dark-charcoal);
+}
+
+h1,
+h2 {
+    font-family: "young-serif", serif;
+}
+
+h2,
+li::marker,
+tr td:nth-child(2) {
+    color: var(--nutmeg);
+    font-weight: 400;
+}
+
+/* li::marker,
+tr td:nth-child(2) {
+    font-weight: bold;
+} */
+
+section:first-child {
+    background-color: var(--rose-white);
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+section:first-child h2,
+section:first-child li::marker {
+    font-family: "outfit", sans-serif;
+    color: var(--dark-raspberry);
+    font-weight: 700;
+}
